@@ -1,0 +1,25 @@
+<!ELEMENT cifp (alumno | profesor)*>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT fecha_nacimiento (#PCDATA)>
+<!ELEMENT correo (#PCDATA)>
+<!ELEMENT teléfono (#PCDATA)>
+<!ELEMENT dirección (#PCDATA)>
+
+<!ELEMENT alumno (nombre, apellidos, fecha_nacimiento?, correo?, teléfono?, dirección?, fecha_matrícula, curso)>
+<!ATTLIST alumno id NMTOKEN #REQUIRED>
+<!ELEMENT fecha_matrícula (#PCDATA)>
+<!ELEMENT curso (#PCDATA)>
+
+<!ELEMENT profesor (nombre, apellidos, fecha_nacimiento?, correo?, teléfono?, dirección?, fecha_incorporación, departamento, asignatura*)>
+<!ATTLIST profesor id NMTOKEN #REQUIRED>
+<!ELEMENT fecha_incorporación (#PCDATA)>
+<!ELEMENT departamento (#PCDATA)>
+
+<!ELEMENT asignatura (nombre_asignatura, fecha_inicio?, fecha_final?)>
+<!ATTLIST asignatura 
+    id_asignatura NMTOKEN #REQUIRED
+    ciclo (DAM|DAW|ASIX|SMX|SEIA|ER|AUT) #REQUIRED>
+<!ELEMENT nombre_asignatura (#PCDATA)>
+<!ELEMENT fecha_inicio (#PCDATA)>
+<!ELEMENT fecha_final (#PCDATA)>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cifp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="cifp.xsd">
+    <alumno id="1">
+        <nombre>Sara</nombre>
+        <apellidos>García</apellidos>
+        <teléfono>600112233</teléfono>
+        <dirección>Calle Mayor 10</dirección>
+        <fecha_matrícula>2024-09-01</fecha_matrícula>
+        <curso>DAW</curso>
+    </alumno>
+</cifp>

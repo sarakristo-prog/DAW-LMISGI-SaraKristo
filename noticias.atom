@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Noticias sobre coches</title>
+  <updated>2024-11-15T12:00:00Z</updated>
+  <id>urn:uuid:60a76c80-d399-11ed-afa1-0242ac120002</id>
+  <author>
+    <name>Sara</name>
+  </author>
+  <link rel="self" href="https://www.motornews.com/noticias.atom"/>
+
+  <entry>
+    <title>Ferrari presenta su nuevo modelo híbrido</title>
+    <link href="https://www.motornews.com/ferrari-sf-2024"/>
+    <id>https://www.motornews.com/ferrari-sf-2024</id>
+    <updated>2024-11-14T10:00:00Z</updated>
+    <author>
+      <name>Sara</name>
+    </author>
+    <summary>Lanzamiento del nuevo SF-2024 con tecnología híbrida avanzada.</summary>
+  </entry>
+</feed>

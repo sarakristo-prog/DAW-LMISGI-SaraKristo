@@ -1,0 +1,14 @@
+{
+  "cifp": {
+    "alumnos": [
+      {
+        "id": 1,
+        "nombre": "Sara",
+        "apellidos": "García",
+        "teléfono": "600112233",
+        "fecha_matrícula": "2024-09-01",
+        "curso": "DAW"
+      }
+    ]
+  }
+}

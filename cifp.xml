@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cifp SYSTEM "cifp.dtd">
+<cifp>
+    <alumno id="1">
+        <nombre>Sara</nombre>
+        <apellidos>García</apellidos>
+        <teléfono>600112233</teléfono>
+        <dirección>Calle Mayor 10</dirección>
+        <fecha_matrícula>2024-09-01</fecha_matrícula>
+        <curso>DAW</curso>
+    </alumno>
+    <profesor id="101">
+        <nombre>Juan</nombre>
+        <apellidos>Pérez</apellidos>
+        <fecha_incorporación>2020-01-15</fecha_incorporación>
+        <departamento>Informática</departamento>
+        <asignatura id_asignatura="50" ciclo="DAW">
+            <nombre_asignatura>Desarrollo Web en Entorno Cliente</nombre_asignatura>
+        </asignatura>
+    </profesor>
+</cifp>

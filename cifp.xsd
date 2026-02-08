@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="tipoCiclo">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DAM"/><xs:enumeration value="DAW"/><xs:enumeration value="ASIX"/>
+      <xs:enumeration value="SMX"/><xs:enumeration value="SEIA"/><xs:enumeration value="ER"/><xs:enumeration value="AUT"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="cifp">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="alumno">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="apellidos" type="xs:string"/>
+              <xs:element name="fecha_nacimiento" type="xs:string" minOccurs="0"/>
+              <xs:element name="correo" type="xs:string" minOccurs="0"/>
+              <xs:element name="teléfono" type="xs:string" minOccurs="0"/>
+              <xs:element name="dirección" type="xs:string" minOccurs="0"/>
+              <xs:element name="fecha_matrícula" type="xs:string"/>
+              <xs:element name="curso" type="tipoCiclo"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:integer" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
